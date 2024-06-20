@@ -1,0 +1,33 @@
+#Calculator program
+print("CALCULATOR")
+while True:
+    print("_____MENU_____")
+    print(" 1.Addition\n", "2.Subtraction\n","3.Multiplication\n","4.Division\n","5.Exit")
+    user_input = int(input("Choose one: "))
+
+    if user_input == 1:
+        inputs_1 = int(float(input("Enter the Operands 1: ")))
+        inputs_2 = int(float(input("Enter the Operands 2: ")))
+        result = inputs_1 + inputs_2
+        print("The result= "+str(result))
+    elif user_input == 2:
+        inputs_1 = int(float(input("Enter the Operands 1: ")))
+        inputs_2 = int(float(input("Enter the Operands 2: ")))
+        result = inputs_1 - inputs_2
+        print("The result= " + str(result))
+    elif user_input ==3:
+        inputs_1 = int(float(input("Enter the Operands 1: ")))
+        inputs_2 = int(float(input("Enter the Operands 2: ")))
+        result = inputs_1 * inputs_2
+        print("The result= " + str(result))
+    elif user_input == 4:
+        inputs_1 = int(float(input("Enter the Operands 1: ")))
+        inputs_2 = int(float(input("Enter the Operands 2: ")))
+        result = inputs_1 / inputs_2
+        print("The result= " + str(result))
+    elif user_input == 5:
+        print("Thank You!!! Goodbye!!!")
+        break
+    else:
+        print(" Please select the correct option!")
+        continue
